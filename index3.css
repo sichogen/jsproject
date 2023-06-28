@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #4d3c3c;
+  width: 100%;
+  height: 100px;
+}
+.wrapper {
+  height: 100px;
+  width: 100%;
+}
+.wrapper .logo{
+text-align: center;
+display: block;
+color: #000;
+}
+
+.wrapper h2{
+display: none;
+}
+
+nav{
+margin: 0px;
+
+height: 160px;
+
+}
+nav ul{
+align-items: center;
+align-content: center;
+padding-top: 10px;
+}
+
+nav ul li{
+display: flex;
+float: left;
+margin-left: 30px;
+display: block;
+}
+nav ul li a{
+text-decoration: none;
+color: #f1eeee;
+font-size: 18px;
+padding-left: 20px
+}
+
+nav ul li a:hover{
+  background-color: #838181;
+  display: block;
+}
+
+@media(max-width: 480px){
+  .burger-nav{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(img/hamburger.png) no-repeat 98% center;
+    background-color: #4d3c3c;
+    cursor: pointer;
+   
+  }
+  header{
+    margin: 0;
+  }
+  header nav ul {
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+  }
+
+  header nav ul.open{
+    height: auto;
+  
+  }
+
+  header nav ul li{
+    float: none;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav ul li a{
+    color: #fff;
+    padding: 10px 10px;
+    border-bottom: 1px solid #fff;
+    display: block;
+    margin: 0;
+  }
+
+  .wrapper .logo{
+    text-align: center;
+    display: block;
+    color: #e9e2e2;
+    }
+  .section{
+    width: 100%;
+    height: auto
+    margin: 0;
+    background-image: url(img/sparkles-twinkles.gif);
+  }
+  .section h1{
+    color: #fff;
+    align-content: center;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+  }
+  
+}

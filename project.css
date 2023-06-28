@@ -1,0 +1,258 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.topnav{
+  width: 100%;
+  display: block;
+  background-color: black;
+  overflow: hidden;
+  
+}
+
+.topnav .active{
+  float: left;
+  padding: 0px;
+  display: block;
+  margin: 20px 20px 0px 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.topnav #myLinks{
+  display: contents;
+  align-items: center;
+}
+#myLinks #right{
+  float: right;
+}
+.topnav #myLinks a{
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+.topnav .icon{
+  display: none;
+}
+
+.desktop{
+  min-height: 100vh;
+  margin: auto;
+  background-color: #f8f5f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clockin{
+  background-image: url(img/star2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.clockin h1{
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+}
+.row h1 {
+  color: #ebe0e0;
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 0;
+  margin-top: 2px;
+
+}
+
+@media(max-width: 550px){
+  .topnav{
+    width: 100%;
+    display: block;
+    background-color: black;
+    overflow: hidden;
+    
+  }
+  
+  .topnav .active{
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  .topnav #myLinks{
+    display: contents;
+    align-items: center;
+  }
+  #myLinks #right{
+    float: right;
+  }
+  .topnav #myLinks a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+  }
+  .topnav .icon{
+    display: none;
+  }
+  
+  .desktop{
+    min-height: 100vh;
+    margin: auto;
+    background-color: #f3ebeb;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media(max-width: 480px){
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #f7efef;
+    min-height: 100vh;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav #myLinks{
+    display: block;
+    align-items: center;
+  }
+  .topnav #myLinks a{
+    display: block;
+    align-items: center;
+  }
+  #myLinks #right{
+    display: contents;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #myLinks a:hover{
+    display: block;
+    background-color: #555;
+    color: yellowgreen;
+  }
+  .active {
+    color: white;
+  }
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transform: .6s;
+  }
+
+  .card:hover{
+    transform: scale(1.008);
+    transition: .6s;
+  }
+  
+  .card img{
+    height: 250px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title, h2, p {
+    color: rgb(29, 27, 27);
+  }
+
+  .container h2{
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+.footer{
+  width: 100%;
+  background-color: #333;
+  height: 30px;
+}
+
+.footer p{
+  text-align: center;
+  padding-top: 5px;
+  color: #fff;
+}
